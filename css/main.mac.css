@@ -1,0 +1,816 @@
+.cmainpanel {
+    color: #fff;
+    margin: 2px;
+    font-family: system-ui;
+}
+
+.caddcalcul {
+    font-size: 1.8ch;
+}
+
+.ctopictotal,
+.ctopichafltotal {
+    display: flex;
+    /*
+    align-items: center;
+    */
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.centerstring,
+.ctitletotal,
+.ctitleforecasttotal,
+.ctitlehafltotal,
+.ctitleforecasthafltotal {
+    color: white;
+}
+
+.cbtopic {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.cuptopic {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.cchartlistandtable {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.cblockteams {
+    height: 410px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cdivteamheadfast,
+.cdivteamheadsecond{
+    text-align: center;
+    font-weight: inherit;
+    font-size: 2.0ch;
+    padding: 2px;
+}
+
+.cchartlistandtableteamfast,
+.cchartlistandtableteamsecond {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.cchartlistandtablesecond {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------BUTTONs------------------------------*/
+
+button {
+    height: 22px;
+    background-image: linear-gradient(to left, #2b4b2b 0%, #172f5c 50%, #007914 100%)
+}
+
+button {
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1.2s;
+    background-size: 150% auto;
+    color: rgb(0, 165, 55);
+    border-radius: 26em;
+    outline: none !important;
+}
+
+button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: rgb(136, 255, 179);
+    text-decoration: none;
+    box-shadow: 0 0 26em #fff;
+    outline: none !important;
+}
+
+button:active {
+    background: #003a81;
+    outline: none !important;
+    border-radius: 29em;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+/*-------------------------------------------------------------*/
+
+/*------------------------------------*/
+
+a {
+    transition: 1.2s;
+    color: rgb(0, 165, 55);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    transition: 1.2s;
+    color: rgb(136, 255, 179);
+}
+
+/*
+a:link {}
+a:visited {}
+*/
+
+/*------------------------------------*/
+
+
+/*------------------------------------------------------------*/
+
+.cmatchinfo {
+    width: 500px;
+    background: linear-gradient(to right, green, rgba(1, 61, 121, 0));
+}
+
+.cpointstime {
+    width: 470px;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    font-size: 2.0ch;
+    font-weight: 460;
+    /*
+    text-shadow: -0 -1px 0 #00007b, 0 -1px 0 #00007b, -0 1px 0 #00007b, 0 1px 0 #00007b, -1px -0 0 #00007b, 1px -0 0 #00007b, -1px 0 0 #00007b, 1px 0 0 #00007b, -1px -1px 0 #00007b, 1px -1px 0 #00007b, -1px 1px 0 #00007b, 1px 1px 0 #00007b, -1px -1px 0 #00007b, 1px -1px 0 #00007b, -1px 1px 0 #00007b, 1px 1px 0 #00007b;
+    */
+}
+
+.cteamsnames,
+.cheadlinematch {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    font-size: 1.9ch;
+    font-weight: 460;
+    width: 480px;
+}
+
+.csecondsofquater {
+    font-size: large;
+    padding-left: 0.3%;
+    font-weight: 450;
+}
+
+.cforecastpoints,
+.cforecastbyquarters,
+.cforecastrepetitions,
+.caverageforecastpoints,
+.caverageforecastpointsrepeattime,
+.cdiffbetweenavmidmaxpointsandforecast,
+.caveragerateofquater,
+.csumpoints,
+.ctotalpoints,
+.cforecasttotalpoints,
+.chafltotalpoints,
+.cforecasthafltotalpoints {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    font-size: 2.0ch;
+    font-weight: 460;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.controlbuttons{    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    width: 24px;
+  
+}
+/* --------------------- */
+
+.cbdelfastelgeneral,
+.cbdelfastelfast,
+.cbdelfastelsecond,
+.cbclearloggeneral,
+.cbclearlogfast,
+.cbclearlogsecond,
+.cbsaveloggeneral{
+    transform: rotate(-90deg);
+    height: 22px;
+    width: 100px;
+}
+
+
+.cchartlistscrollxgeneral,
+.cchartlistscrollxfast,
+.cchartlistscrollxsecond {
+    display: flex;
+    /*align-items: flex-start;*/
+    width: 545px;
+    /*709px;*/
+    height: 396px;
+    /* 329px; */
+    background: linear-gradient(to right, rgb(247, 251, 247), rgb(254, 249, 236));
+}
+
+
+.cdivchartlistgeneral,
+.cdivchartlistfast,
+.cdivchartlistsecond {
+    background-color: floralwhite;
+    width: 477px;
+    height: 389px;
+    /*329px; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.ct-chart-y-general,
+.ct-chart-y-fast,
+.ct-chart-y-second {
+    width: 57px;
+    height: 373px;
+    /*  308px; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ctablequarters tr {
+    border: 3px solid rgb(1, 61, 121);
+}
+
+.ctablequarters td {
+    border-collapse: collapse;
+    /*border: 1px solid rgb(1, 61, 121);*/
+    text-align: center;
+    height: 20px;
+}
+
+.ctablequarters {
+    background: white;
+    color: black;
+    font-weight: 500;
+    font-size: 1.99ch;
+    height: 128px;
+    width: 530px;
+    border-collapse: collapse;
+    /* Убираем двойные линии между ячейками */
+    border: none;
+    /* 4px solid white; */
+    /* Прячем рамку вокруг таблицы */
+}
+
+
+/*----- table Forecast ------ */
+.cdivtotals {
+    width: 165px;
+    height: 396px;
+    /* 396px; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* Замедление скрола в таблице! */
+}
+
+table {
+    width: 100%;
+    /* Расстояние между границ */
+}
+
+.ctqtable,
+.cthtable,
+.ctttable {
+    background: white;
+}
+
+.ctqthead,
+.cththead,
+.cttthead {
+    background: green;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    height: 19px;
+    color: white;
+    background: green;
+    padding: 1px;
+}
+
+.cdivtablegeneral,
+.cdivtablefast,
+.cdivtablesecond {
+    width: 426px;
+    height: 360px;
+    /* 329px; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Замедление скрола в таблице! */
+}
+
+.cmaintheadgeneral,
+.cmaintheadfast,
+.cmaintheadsecond{
+    width: 426px;
+    height: 36px;
+}
+
+.cdivtablebodygeneral,
+.cdivtablebodyfast,
+.cdivtablebodysecond {
+    width: 426px;
+    height: 35px;
+    /*  329px; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Замедление скрола в таблице! */
+}
+
+
+.cmaintablegeneral,
+.cmaintablefast,
+.cmaintablesecond{
+    width: 412px;
+    height: 35px;
+    border-collapse: collapse;
+}
+
+.cmaintbodyloggeneral,
+.cmaintbodylogfast,
+.cmaintbodylogsecond {
+    background: white;
+    color: black;
+    text-align: center;
+
+}
+
+.cmaintbodyloggeneral tr,
+.cmaintbodylogfast tr,
+.cmaintbodylogsecond tr {
+    border: 3px solid rgb(171 171 217) ;
+    height: 21px;
+    font-weight: 460;
+    font-size: 1.8ch;
+   
+}
+
+.cmaintbodyloggeneral td,
+.cmaintbodylogfast td,
+.cmaintbodylogsecond td {
+    width: 60px;
+}
+
+
+.ctqtbodylog,
+.cthtbodylog,
+.ctttbodylog {
+    color: black;
+    text-align: center;
+    font-weight: 430;
+    font-size: 2.0ch;
+}
+
+.ctqtbodylog,
+.ctqtbodylog,
+.cthtbodylog,
+.ctttbodylog tr {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/* ------------------ main info table ------------------*/
+
+.cmaintmatchinfoandforecast{
+    background: white;
+    color: black;
+    border-collapse: collapse;
+    /* Убираем двойные линии между ячейками */
+}
+
+.ctbmatchinfoandforecast td{
+    text-align: center;
+    font-weight: 445px;
+    font-size: 2.0ch;
+}
+
+/*ctbmatchinfoandforecast*/ 
+/* ---------------------------- */
+
+
+/* ------expl table--------*/
+
+.cttexmpl{
+    background: white;
+    color: black;
+}
+
+.ctbexmpl td{
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.9ch;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+/*ctbmatchinfoandforecast*/ 
+/* ---------------------------- */
+
+
+/* -------------------------- */
+
+b {
+    font-size: 2.1ch;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ctopic {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.ctopicblock {
+    display: table-cell;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+/*-------------------series-a-------------------*/
+
+.ct-series-a .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(0, 0, 0);
+    /* Control the thikness of your lines */
+    stroke-width: 3px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 7px 3px;
+    animation: dashbet 3.5s linear infinite;
+}
+
+.ct-series-a .ct-area {
+    fill: rgba(0, 0, 0, 1);
+}
+
+.ct-series-a .ct-point {
+    /* Colour of your points */
+    stroke: rgb(0, 0, 0);
+    /* Size of your points */
+    stroke-width: 3px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-b-------------------*/
+
+.ct-series-b .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(0, 199, 0);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    /*    stroke-dasharray: 10px 20px;  */
+    stroke-dasharray: 12px 1px;
+    animation: dashbetback 13.5s linear infinite;
+}
+
+.ct-series-b .ct-area {
+    fill: rgba(0, 210, 0, 0);
+}
+
+.ct-series-b .ct-point {
+    /* Colour of your points */
+    /*stroke: rgb(0, 255, 0); */
+    /* Size of your points */
+    stroke-width: 8px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-c-------------------*/
+
+.ct-series-c .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(199, 0, 0);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 32px 2px;
+    animation: dashbetback 13.5s linear infinite;
+
+}
+
+.ct-series-c .ct-area {
+    fill: rgba(199, 0, 0, 1);
+}
+
+.ct-series-c .ct-point {
+    /* Colour of your points */
+    stroke: rgb(199, 0, 0);
+    /* Size of your points */
+    stroke-width: 5px;
+}
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-d-------------------*/
+
+.ct-series-d .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(0, 0, 199);
+    /* Control the thikness of your lines */
+    stroke-width: 1px;
+    /* Create a dashed line with a pattern */
+    /*    stroke-dasharray: 10px 20px;  */
+    stroke-dasharray: 32px 2px;
+    animation: dashbetback 13.5s linear infinite;
+}
+
+.ct-series-d .ct-area {
+    fill: rgba(0, 0, 199, 1);
+}
+
+.ct-series-d .ct-point {
+    /* Colour of your points */
+    stroke: rgb(0, 0, 255);
+    /* Size of your points */
+    stroke-width: 4px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-e-------------------*/
+
+.ct-series-e .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(126, 41, 7);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 8px 2px;
+    animation: dashbet 3s linear infinite;
+}
+
+.ct-series-e .ct-area {
+    fill: rgba(126, 41, 7, 1);
+}
+
+.ct-series-e .ct-point {
+    /* Colour of your points */
+    stroke: rgb(126, 41, 7);
+    /* Size of your points */
+    stroke-width: 5px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-f-------------------*/
+
+.ct-series-f .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(0, 130, 180);
+    /* Control the thikness of your lines */
+    stroke-width: 1px;
+    stroke-dasharray: 8px 2px;
+    animation: dashbetback 11.5s linear infinite;
+}
+
+.ct-series-f .ct-area {
+    fill: rgba(0, 130, 180, 1);
+}
+
+.ct-series-f .ct-point {
+    /* Colour of your points */
+    stroke: rgb(0, 130, 180);
+    /* Size of your points */
+    stroke-width: 3px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-g-------------------*/
+
+.ct-series-g .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(69, 0, 169);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 7px 4px;
+    animation: dashbet 3s linear infinite;
+}
+
+.ct-series-g .ct-area {
+    fill: rgba(68, 0, 169, 0);
+}
+
+.ct-series-g .ct-point {
+    /* Colour of your points */
+    stroke: rgb(69, 0, 169);
+    /* Size of your points */
+    stroke-width: 6px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-h-------------------*/
+
+.ct-series-h .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(0, 180, 100);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 7px 4px;
+    animation: dashbet 3s linear infinite;
+}
+
+.ct-series-h .ct-area {
+    fill: rgba(0, 100, 100, 0);
+}
+
+.ct-series-h .ct-point {
+    /* Colour of your points */
+    stroke: rgb(0, 100, 100);
+    /* Size of your points */
+    stroke-width: 6px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------series-i-------------------*/
+
+.ct-series-i .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(236, 36, 0);
+    /* Control the thikness of your lines */
+    stroke-width: 2px;
+    /* Create a dashed line with a pattern */
+    stroke-dasharray: 7px 4px;
+    animation: dashbet 3s linear infinite;
+}
+
+
+/*+++++++++++++++++++++++++++++*/
+
+.ct-series-i .ct-area {
+    fill: rgba(236, 36, 0, 0);
+}
+
+.ct-series-i .ct-point {
+    /* Colour of your points */
+    stroke: rgb(236, 36, 0);
+    /* Size of your points */
+    stroke-width: 6px;
+}
+
+
+/*----------------------------------------------*/
+
+/*-------------------series-j-------------------*/
+
+.ct-series-j .ct-line {
+    /* Set the colour of this series line */
+    stroke: rgb(180, 80, 0);
+    /* Control the thikness of your lines */
+    stroke-width: 1px;
+}
+
+.ct-series-j .ct-area {
+    fill: rgba(180, 80, 0, 0.5);
+}
+
+.ct-series-j .ct-point {
+    /* Colour of your points */
+    stroke: rgb(180, 80, 0);
+    /* Size of your points */
+    stroke-width: 3px;
+}
+
+.clock-time-icons{
+    height: 14px;
+    width: 13px;
+    animation: anim 5s infinite linear;
+}
+
+.clock-time-icons-gif{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+/*----------------------------------------------*/
+@keyframes anim {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+/*-----------------------------*/
+
+@keyframes dashbet {
+    /* to {
+        stroke-dashoffset: -105;    
+    }*/
+    100% {
+        stroke-dashoffset: -80;
+    }
+}
+
+/*-----------------------------*/
+/*-----------------------------*/
+
+@keyframes dashbetback {
+    /* to {
+        stroke-dashoffset: -105;    
+    }*/
+    100% {
+        stroke-dashoffset: 80;
+    }
+}
+
+/*-----------------------------*/
+
+
+/*----------------------------------------------*/
+
+.chartist-tooltip {
+    position: fixed;
+    display: table;
+    max-width: fit-content;
+    padding: 0.5em;
+    border-radius: 1em;
+    background: rgba(25, 102, 10, 0.68);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Oxygen, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    z-index: 90;
+    transition: opacity .01s linear;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*-------------------скроллбар-------------------*/
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    /* ширина для вертикального скролла */
+    height: 7px;
+    /* высота для горизонтального скролла */
+    background-color: #00811c69;
+}
+
+
+/* ползунок скроллбара */
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #00440b;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 8px #44e49f;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #2a007991;
+}
+
+
+/*------------------------------------------*/

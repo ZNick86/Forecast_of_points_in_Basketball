@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "version": "8.21.07.04",
+    "name": "Points Quarter",
+    "description": "Forecast of total points in Basketball",
+    "icons": {
+        "128": "icons/iconsbb.png"
+    },
+
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+
+    "content_scripts": [{
+        "matches": ["*://www.marathonbet.com/su/live/*"],
+        "js": ["js/content.js"],
+        "css": ["css/content.css"]
+    }],
+
+    "permissions": [
+        "*://*/*",
+        "storage",
+        "activeTab",
+        "tabs",
+        "webRequest"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/iconsbb.png"
+    }
+}

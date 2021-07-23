@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html style="
+    background-color: rgba(255, 0, 0, 0);
+">
+
+<head>
+    <script src="js/chartist/dist/chartist.js"></script>
+    <link rel="stylesheet" href="js/chartist/dist/chartist.css">
+
+    <script src="js/evaluator/Date.js" type="text/javascript"></script>
+    <script src="js/evaluator/Stack.js" type="text/javascript"></script>
+    <script src="js/evaluator/Tokanizer.js" type="text/javascript"></script>
+    <script src="js/evaluator/Evaluator.js" type="text/javascript"></script>
+
+    <script src="js/lib.functions.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body class="csspanel">
+    <div class="ctopic">
+        <b>Time of Quarter:</b>
+        <p><input name="mqarter" class="cminutesofqarter" type="radio" value="300"> 5 minutes</p>
+        <p><input name="mqarter" class="cminutesofqarter" type="radio" value="600">10 minutes</p>
+        <p><input name="mqarter" class="cminutesofqarter" type="radio" value="720">12 minutes</p>
+    </div>
+    <div class="ctopicblock">
+
+        <div class="ctopic">
+            <b style="width: 57px;
+                  font-size: large;">Points: Time:</b>
+            <div class="cmessage" style="width: 365px;">Match...</div>
+        </div>
+    </div>
+    <div class="ctopicblock">
+        <div class="ctopic">
+            <b style="width: 126px;">POINTS Quarter:</b>
+            <div class="csumpoints">S...</div>
+            <b>Forecast:</b>
+            <div class="cforecastpoints">F...</div>
+            <b>Re.ns:</b>
+            <div class="cforecastrepetitions">R...</div>
+        </div>
+        <div class="ctopic">
+            <b>Diff.Max.Ps.F: +</b>
+            <div class="cdiffbetweenavmidmaxpointsandforecast">D...</div>
+        </div>
+    </div>
+
+    <div class="cbtopic">
+        <button class="cbclearlog">Clear log</button>
+        <a>Save log</a>
+    </div>
+
+    <div class="ctopic">
+        <div class="cchartlistscrollx" id="chartscrollx">
+            <div class="ct-chart-y" id="charty"></div>
+            <div class="cdivchartlist">
+                <div class="ct-chart" id="chartlog"></div>
+            </div>
+        </div>
+        <div class="cdivtable">
+            <table class="cmaintable">
+                <thead class="cmainthead">
+                    <tr>
+                        <th>Sec</th>
+                        <th>TsPs</th>
+                        <th>Forecast</th>
+                        <th>Re.</th>
+                    </tr>
+                </thead>
+                <tbody class="cmaintbodylog"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="cbtopic">
+        <div class="ctopichafltotal">
+            <b class="ctitlehafltotal" style="width: 210px;">Total ...:</b>
+            <div class="chafltotalpoints">Total...</div>
+            <b>Forecast:</b>
+            <div class="cforecasthafltotalpoints">F...</div>
+        </div>
+
+        <div class="ctopictotal">
+            <b class="ctitletotal" style="width: 210px;">Total ...:</b>
+            <div class="ctotalpoints">Total...</div>
+            <b>Forecast:</b>
+            <div class="cforecasttotalpoints">F...</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

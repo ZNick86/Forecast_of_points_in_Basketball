@@ -1,0 +1,214 @@
+<!doctype html>
+<html style="overflow-x: hidden; overflow-y: hidden; color: #fff; background: linear-gradient(to right, rgba(0, 128, 0, 0.900), rgb(1, 61, 121),  rgba(0, 128, 0, 0.900));">
+
+<head>
+    <title>Basketball: Forecast of points v8.21.06.07</title>
+
+    
+    <script src="js/detect-zoom.js" type="text/javascript"></script>
+    
+    <script src="js/chartist/dist/chartist.js" type="text/javascript"></script>
+
+    <script src="js/chartist//dist/chartist-plugin-tooltip.js" type="text/javascript"></script>
+    <script src="js/chartist//dist/chartist-plugin-threshold.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="js/chartist/dist/chartist.css">
+
+    <script src="js/evaluator/Date.js" type="text/javascript"></script>
+    <script src="js/evaluator/Stack.js" type="text/javascript"></script>
+    <script src="js/evaluator/Tokanizer.js" type="text/javascript"></script>
+    <script src="js/evaluator/Evaluator.js" type="text/javascript"></script>
+
+    <script src="js/lib.functions.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="cmainpanel">
+
+    <div class="cuptopic">
+        <table class="cmaintmatchinfoandforecast">
+            <tbody class="ctbmatchinfoandforecast">
+            </tbody>
+        </table>
+
+        <div class="ctopic">
+            <b style="font-size: 1.9ch; font-weight: lighter; font-family: revert;">ad.cal.:</b>
+            <div class="caddcalcul">Add calcul...</div>
+        </div>
+
+    </div>
+
+    <div class="cchartlistandtable">
+        <div class="controlbuttons">
+            <button class="cbdelfastelgeneral">Del.fast-E</button>
+            <button class="cbclearloggeneral">Clear log</button>
+            <button class="cbsaveloggeneral"><a class="curlsaveloggeneral">Save log</a></button>                            
+        </div>    
+
+        <div class="cchartlistscrollxgeneral" id="chartscrollxgeneral">
+            <div class="ct-chart-y-general" id="chartygeneral"></div>
+            <div class="cdivchartlistgeneral" id="chartlistgeneral">
+                <div class="ct-chart-x-general" id="chartloggeneral"></div>
+            </div>
+        </div>
+
+        <div class="cdivtotals">
+            <table class="ctqtable">
+                <thead class="ctqthead"> <tr> <th>Q.bet</th> </tr> </thead>
+                <tbody class="ctqtbodylog"></tbody>
+            </table>
+            <table class="cthtable">
+                <thead class="cththead"> <tr>  <th>H.bet</th> </tr> </thead>
+                <tbody class="cthtbodylog"></tbody>
+            </table>
+            <table class="ctttable">
+                <thead class="cttthead"> <tr>  <th>T.bet</th> </tr> </thead>
+                <tbody class="ctttbodylog"></tbody>
+            </table>
+        </div>
+
+        <div class="cdivheadgeneral">
+            <table class="cmaintablegeneral">
+                <thead class="cmaintheadgeneral">
+                    <tr>
+                        <th style="width: 49px;" rowspan="2"><br>Sec</th>
+                        <th style="width: 42px;" rowspan="2">Ps<br>Ts</th>
+                        <th colspan="6">F o r e c a s t</th>
+                    </tr>
+                    <tr>
+                        <th style="width: 56px;">by Time</th>
+                        <th style="width: 48px;">Actual</th>
+                        <th style="width: 46px;">Re.</th>
+                        <th style="width: 50px;">L o w</th>
+                        <th style="width: 50px;">Medium</th>
+                        <th style="width: 58px;">H i g h</th>
+                    </tr>
+                </thead>
+            </table>
+            
+            <div class="cdivtablegeneral">
+                <table class="cmaintablegeneral">
+                    <tbody class="cmaintbodyloggeneral"></tbody>
+                </table>
+            </div>
+        </div>
+     
+    </div>
+    
+    <div class="cbtopic">
+        <button class="cbhidenshowteams">Hiden teams</button>        
+        <button class="cbwinorien" style="display: none;" >Vertical</button>
+    </div>
+
+    <div class="cblockteams">
+        <!-- teams  block's begin -->
+
+        <div style="width: 590px;">
+
+            <div class="cdivteamheadfast">Team: </div>
+            <div class="cchartlistandtableteamfast">
+
+                <div class="cdivheadfast">
+                    <table class="cmaintablefast">
+                        <thead class="cmaintheadfast">
+                            <tr>
+                                <th style="width: 49px;" rowspan="2"><br>Sec</th>
+                                <th style="width: 42px;" rowspan="2">Ps<br>Ts</th>
+                                <th colspan="6">F o r e c a s t</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 56px;">by Time</th>
+                                <th style="width: 48px;">Actual</th>
+                                <th style="width: 46px;">Re.</th>
+                                <th style="width: 50px;">L o w</th>
+                                <th style="width: 50px;">Medium</th>
+                                <th style="width: 58px;">H i g h</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    
+                    <div class="cdivtablefast">
+                        <table class="cmaintablefast">
+                            <tbody class="cmaintbodylogfast"></tbody>                            
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="cchartlistscrollxfast" id="chartscrollxfast">
+                    <div class="ct-chart-y-fast" id="chartyfast">            
+                    </div>
+                    <div class="cdivchartlistfast" id="chartlistfast">
+                        <div class="ct-chart-x-fast" id="chartlogfast">                    
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="controlbuttons"> 
+                    <button class="cbdelfastelfast">Del.fast-E</button>
+                    <button class="cbclearlogfast">Clear log</button>
+                </div>
+
+            </div> 
+
+        </div>
+
+        <div style="width: 590px;">
+
+            <div class="cdivteamheadsecond">Team: </div>
+            <div class="cchartlistandtableteamsecond">
+           
+                <div class="cdivheadsecond">
+                    <table class="cmaintablesecond">
+                        <thead class="cmaintheadsecond">
+                            <tr>
+                                <th style="width: 49px;" rowspan="2"><br>Sec</th>
+                                <th style="width: 42px;" rowspan="2">Ps<br>Ts</th>
+                                <th colspan="6">F o r e c a s t</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 56px;">by Time</th>
+                                <th style="width: 48px;">Actual</th>
+                                <th style="width: 46px;">Re.</th>
+                                <th style="width: 50px;">L o w</th>
+                                <th style="width: 50px;">Medium</th>
+                                <th style="width: 58px;">H i g h</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    
+                    <div class="cdivtablesecond">
+                        <table class="cmaintablesecond">
+                            <tbody class="cmaintbodylogsecond"></tbody>
+                        </table>
+                    </div>
+                </div>
+       
+
+                <div class="cchartlistscrollxsecond" id="chartscrollxsecond">
+                    <div class="ct-chart-y-second" id="chartysecond"></div>
+                    <div class="cdivchartlistsecond" id="chartlistsecond">
+                        <div class="ct-chart-x-second" id="chartlogsecond"></div>
+                    </div>
+                </div>
+                
+                <div class="controlbuttons"> 
+                    <button class="cbdelfastelsecond">Del.fast-E</button>
+                    <button class="cbclearlogsecond">Clear log</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    
+    <!-- teams  block's end -->    
+    </div>
+
+
+</body>
+
+</html>
